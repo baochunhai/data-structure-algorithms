@@ -36,6 +36,7 @@ public class SortUtil {
         for (int i = 0; i < arr.length ; i++) {
             System.out.print(arr[i]+"\t");
         }
+        System.out.println();
     }
 
     /**
@@ -57,9 +58,10 @@ public class SortUtil {
      * @return
      */
     public static int[] randomArr(int i){
-        int [] arr = new int[(int)Math.random()*i];
-        for (int j = 0; j < i; j++) {
-            arr[i] = (int)Math.random()*i;
+        int size = (int)(Math.random()*i);
+        int [] arr = new int[size];
+        for (int j = 0; j < size; j++) {
+            arr[j] = (int)(Math.random()*i);
         }
         return arr;
     }
