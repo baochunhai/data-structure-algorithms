@@ -19,7 +19,11 @@ public class SelectSort {
                     max = j;
                 }
             }
-            SortUtil.swap(arr, i, max);
+//            SortUtil.swap(arr, i, max);
+            if (i != max) {
+                SortUtil.swapbyoxr(arr, i, max);
+            }
+
         }
     }
 
