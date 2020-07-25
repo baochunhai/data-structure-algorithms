@@ -58,7 +58,7 @@ public class SortUtil {
      * @return
      */
     public static int[] randomArr(int i){
-        int size = (int)(Math.random()*i);
+        int size = i;
         int [] arr = new int[size];
         for (int j = 0; j < size; j++) {
             arr[j] = (int)(Math.random()*i);
