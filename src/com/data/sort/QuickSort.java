@@ -1,5 +1,7 @@
 package com.data.sort;
 
+import com.data.sort.util.SortUtil;
+
 /**
  * 快速排序
  * @author Administrator

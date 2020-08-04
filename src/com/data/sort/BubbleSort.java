@@ -1,5 +1,7 @@
 package com.data.sort;
 
+import com.data.sort.util.SortUtil;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {2, 4, 3, 5, 1, 7};

@@ -1,5 +1,7 @@
 package com.data.sort;
 
+import com.data.sort.util.SortUtil;
+
 /**
  * 归并排序
  * @author Administrator
@@ -7,7 +9,7 @@ package com.data.sort;
 public class MergeSort {
     public static void main(String[] args) {
 
-        int[] arr =SortUtil.randomArr(5);
+        int[] arr = SortUtil.randomArr(5);
 
         SortUtil.printArr(arr);
 //        process(arr,0,arr.length-1);
