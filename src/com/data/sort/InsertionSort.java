@@ -17,7 +17,8 @@ public class InsertionSort {
     private static void insertionSort(int[] arr){
         for (int i = 1; i < arr.length; i++) {
             for (int j = i; j>0; j--) {
-                if(arr[j]>arr[j-1]){
+                // 正序输出就小于，倒序输出就大于
+                if(arr[j]<arr[j-1]){
                     SortUtil.swap(arr,j,j-1);
                 }
             }
@@ -27,7 +28,8 @@ public class InsertionSort {
         for (int i = 1; i < arr.length; i++) {
             int temp = arr[i];
             int j = i;
-            while (j>0&&temp>arr[j-1]){
+            // 正序输出就temp<arr[j-1]，倒序输出就temp>arr[j-1]
+            while (j>0&&temp<arr[j-1]){
                 arr[j]=arr[j-1];
                 j--;
             }
