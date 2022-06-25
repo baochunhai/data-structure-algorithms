@@ -1,4 +1,4 @@
-package com.data.niuke;
+package com.data.nowcoder;
 
 import java.util.StringJoiner;
 
